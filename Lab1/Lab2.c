@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h> // cần cho system()
+int main() {
+    float a, b;
+    
+    // Nhập vào hai số từ bàn phím
+    printf("Nhập số thứ nhất: ");
+    scanf("%f", &a);
+    printf("Nhập số thứ hai: ");
+    scanf("%f", &b);
+    
+    // Tính tổng và hiệu
+    float tong = a + b;
+    float hieu = a - b;
+    
+    // Hiển thị kết quả
+    printf("Tổng của hai số là: %20.2f\n", tong);
+    printf("Hiệu của hai số là: %20.2f\n", hieu);
+    system("pause"); // hoặc getchar();
+    return 0;
+}
